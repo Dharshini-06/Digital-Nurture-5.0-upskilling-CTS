@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Local Community Event Portal</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:20px;
+}
+.card{
+    border:1px solid #ccc;
+    padding:10px;
+    margin:10px 0;
+    border-radius:5px;
+}
+.error{
+    color:red;
+}
+.success{
+    color:green;
+}
+#loader{
+    display:none;
+}
+</style>
+
+<!-- Exercise 14 -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+<h1>Local Community Event Portal</h1>
+
+<!-- Exercise 8 -->
+<select id="categoryFilter">
+    <option value="All">All</option>
+    <option value="Music">Music</option>
+    <option value="Workshop">Workshop</option>
+    <option value="Sports">Sports</option>
+</select>
+
+<input type="text" id="searchBox" placeholder="Search Event">
+
+<div id="loader">Loading Events...</div>
+
+<div id="eventContainer"></div>
+
+<hr>
+
+<!-- Exercise 11 -->
+<h2>Register for Event</h2>
+
+<form id="registrationForm">
+
+    <input type="text"
+           name="username"
+           placeholder="Name"><br><br>
+
+    <input type="email"
+           name="email"
+           placeholder="Email"><br><br>
+
+    <select name="eventName">
+        <option value="">Select Event</option>
+        <option value="Music Festival">Music Festival</option>
+        <option value="Baking Workshop">Baking Workshop</option>
+    </select>
+
+    <br><br>
+
+    <button type="submit"
+            id="registerBtn">
+        Register
+    </button>
+
+</form>
+
+<p id="message"></p>
+
+<!-- Exercise 1 -->
+<script src="main.js"></script>
+
+</body>
+</html>
